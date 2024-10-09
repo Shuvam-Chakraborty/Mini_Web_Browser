@@ -10,30 +10,6 @@ Mini Web Browser is a lightweight web browser project that focuses on HTML to AS
 - Basic network management
 - Supports loading HTML files from a specified dataset
 
-## Project Structure
-
-. 
-├── README.md \
-├── CMakeLists.txt \ 
-├── build \
-├── gen_html.py \
-├── html_dataset \
-│   ├── html_page_1.html \ 
-│   ├── html_page_2.html \
-│   ├── html_page_3.html \
-│   ├── html_page_4.html \
-│   └── html_page_5.html \
-└── src # Source code directory \ 
-    ├── main.cpp # Main entry point \ 
-    ├── network \
-    │	├── NetworkManager.cpp \
-    │	└── NetworkManager.h \
-    └── parser \
-        ├── HTML2AST.h \
-        ├── HTML2AST.l \
-        └── HTML2AST.y \
-
-
 ## Prerequisites
 
 - CMake (version 3.10 or higher)
