@@ -141,7 +141,7 @@ sem_t* bsem ;
 
 sem_t* bsem_his ;
 
-int n;
+int n=20;
 
 #define SIZE_OF_PAGE 20*1024
 
@@ -340,8 +340,8 @@ int main(int argc, char *argv[ ]){
     filesystem::create_directories(dirPath);
 
 
-    cout<<"enter the size of the buffer: ";
-    cin>>n;
+    // cout<<"enter the size of the buffer: ";
+    // cin>>n;
 
 
     //shared memory storing n
