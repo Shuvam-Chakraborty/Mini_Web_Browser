@@ -13,6 +13,7 @@
 #include <unistd.h>  
 #include <semaphore.h>
 #include <cstdio>   
+#include <thread>
 
 
 
@@ -430,8 +431,33 @@ void consumer_func(){
         
     }
 
+    
+    vector<thread> threadVector;
+    int number_of_threads;
+    
+    int thres=10;
 
-    consumer_func();
+    while(thres)
+
+    while(1){
+        
+        if(opinion=='y'||opinion=='Y')
+            threadVector.push_back(thread(consumer_func));
+        else
+            goto joining_threads;
+    }
+
+    joining_threads:
+    
+    for (auto& temp : threadVector) {
+        
+            temp.join();
+        
+    }
+
+
+
+    
 
 
 
